@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgFor } from '@angular/common';
 
 // define a class for the media structure
 export class Media {
@@ -13,7 +14,7 @@ export class Media {
 @Component({
   selector: 'app-media',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './media.component.html',
   styleUrl: './media.component.css'
 })
