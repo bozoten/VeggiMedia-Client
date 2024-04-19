@@ -1,1 +1,14 @@
-<h1>media works!</h1>
+<h1 class="alert alert-info">VeggiMedia</h1>
+<div class="row">
+  <section class="col-6">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let media of MEDIA">
+        <h5>{{ media.title }}</h5>
+        <p>Year: {{ media.releaseYear }}</p>
+        <p>Type: {{ media.type }}</p>
+        <p>Provider: {{ media.provider }}</p>
+        <p>Rating: {{ media.rating }}</p>
+      </li>
+    </ul>
+  </section>
+</div>
