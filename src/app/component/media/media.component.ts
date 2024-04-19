@@ -25,4 +25,11 @@ MEDIA: Media[] = [
   {_id: 'def234', title: 'The Hunger Habit', releaseYear: 2023, type: 'Book', provider: 'Jud Brewer', rating: 5 },
   {_id: 'ghi567', title: 'Bosch', releaseYear: 2018, type: 'TV', provider: 'Prime', rating: 4 }
 ]
+
+selectedMedia: Media | undefined;
+
+  onSelect(media: Media): void {
+    this.selectedMedia = media;
+    console.log(media);
+  }
 }
